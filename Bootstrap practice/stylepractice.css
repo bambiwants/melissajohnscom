@@ -1,0 +1,87 @@
+.bgimage {
+background-image: url('images/cat.jpg');
+background-position: center center;
+background-color: #000000;
+background-size: cover;
+height: 200px;
+}
+
+.previewblock {
+	background-color: #cecece;
+	background-size: cover;
+	height: 200px;
+}
+
+#credits {
+font-size: 10px;
+color:#262626;
+
+}
+								
+#credits a{
+text-decoration:none;
+color: #e41e2b;
+}
+
+#bighex {
+	background-color: #e41e2b;
+	height: 100px;
+	width: 100px;
+}
+
+
+@media (min-width: 768px) {
+  .navbar-collapse {
+    height: auto;
+    border-top: 0;
+	box-shadow: none;
+    max-height: none;
+    padding-left:0;
+    padding-right:0;
+
+  }
+  .navbar-collapse.collapse {
+    display: block !important;
+    width: auto !important;
+    padding-bottom: 0;
+    overflow: visible !important;
+	
+  }
+  .navbar-collapse.in {
+    overflow-x: visible;
+
+  }
+
+.navbar
+{
+	max-width:300px;
+	margin-right: 0;
+	margin-left: 0;
+	color: #262626;
+
+
+	
+}	
+
+.navbar-nav,
+.navbar-nav > li,
+.navbar-left,
+.navbar-right,
+.navbar-header
+{float:none !important;}
+
+
+.navbar-right .dropdown-menu {left:0;right:auto; }
+.navbar-collapse .navbar-nav.navbar-right:last-child {
+    margin-right: 0;
+
+}
+}
+
+
+.navbar a: hover{
+background-color: #e41e2b;
+color: #ffffff;
+}
+
+.navbar {text-align:center;}
