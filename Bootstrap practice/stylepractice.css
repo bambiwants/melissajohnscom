@@ -27,61 +27,43 @@ color: #e41e2b;
 	background-color: #e41e2b;
 	height: 100px;
 	width: 100px;
+  padding: 5px;
+  margin: auto;
+  display:block;
+
+}
+
+li {
+  text-align: center;
 }
 
 
+
+
+/* make sidebar nav vertical */ 
 @media (min-width: 768px) {
-  .navbar-collapse {
-    height: auto;
-    border-top: 0;
-	box-shadow: none;
+  .sidebar-nav .navbar .navbar-collapse {
+    padding: 0;
     max-height: none;
-    padding-left:0;
-    padding-right:0;
-
   }
-  .navbar-collapse.collapse {
-    display: block !important;
-    width: auto !important;
-    padding-bottom: 0;
-    overflow: visible !important;
-	
+  .sidebar-nav .navbar ul {
+    float: none;
   }
-  .navbar-collapse.in {
-    overflow-x: visible;
-
+  .sidebar-nav .navbar ul:not {
+    display: block;
   }
+  .sidebar-nav .navbar li {
+    float: none;
+    display: block;
+  }
+  .sidebar-nav .navbar li a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  
+  .navbar-brand {
+    height: 200px; // Logo will not overhang
 
-.navbar
-{
-	max-width:300px;
-	margin-right: 0;
-	margin-left: 0;
-	color: #262626;
-
-
-	
-}	
-
-.navbar-nav,
-.navbar-nav > li,
-.navbar-left,
-.navbar-right,
-.navbar-header
-{float:none !important;}
-
-
-.navbar-right .dropdown-menu {left:0;right:auto; }
-.navbar-collapse .navbar-nav.navbar-right:last-child {
-    margin-right: 0;
 
 }
-}
 
-
-.navbar a: hover{
-background-color: #e41e2b;
-color: #ffffff;
-}
-
-.navbar {text-align:center;}
