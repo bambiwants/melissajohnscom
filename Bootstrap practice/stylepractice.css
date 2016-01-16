@@ -38,6 +38,14 @@ li {
   display: block;
 }
 
+.navbar {
+  font-family: 'uni_sansthin_caps', 'sans-serif';
+}
+
+.navbar-nav li {
+  font-size: 18px;
+}
+
 .navbar {background-color: #f9f9f9; color: #262626;}
 .navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand {color: #262626;}
 .navbar-default .navbar-nav > li > a:hover {color: #ffffff; background-color: #e41e2b;}
@@ -357,20 +365,27 @@ padding-top: 20px;
 }
 
 #credits {
-font-family: 'uni_sansthin_caps';
+font-family: 'uni_sansthin_caps', 'sans-serif';
 font-size: 11px;
 color:#262626;
 margin: auto; /* makes credits centre in sidebar */
-margin-top: 80px;
 }
-								
+
+/* larger than mobile, give credits space */
+@media (min-width: 768px) {
+  #credits {
+    margin-top: 80px;
+  }
+}
+
+
 #credits a{
 text-decoration:none;
 color: #e41e2b;
 }
 
 #redhead {
-font-family: 'uni_sansheavy_caps';
+font-family: 'uni_sansheavy_caps', 'sans-serif';
 color: #e41e2b;
 font-size: 24px;
 line-height: 4px;
