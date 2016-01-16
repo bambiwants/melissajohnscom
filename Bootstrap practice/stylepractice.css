@@ -43,9 +43,13 @@ li {
 .navbar-default .navbar-nav > li > a:hover {color: #ffffff; background-color: #e41e2b;}
 .navbar-default .navbar-nav > li > a:focus {color: #ffffff; background-color: #fc678d;}
 
-
 /* make sidebar nav vertical */ 
 @media (min-width: 768px) {
+  #main-content {
+    width: 100%;
+    padding-left: 25%;
+  }
+
   .sidebar-nav .navbar .navbar-collapse {
     padding: 0;
     max-height: none;
@@ -65,6 +69,10 @@ li {
     the user be able to scroll it. */
     overflow: scroll;
 
+    max-width: 380px;
+    width: 25%;
+    z-index: 1000;
+
     /* Padding or margins on something at 100% of the
     browser window will make it scroll. We kill them. */
     margin-top: 0;
@@ -78,8 +86,6 @@ li {
     border-right-color: #ffffff;
     border-right-style: solid;
     border-radius: 0;
-
-    max-width: 380px;
   }
 
   .navbar-nav {
@@ -128,6 +134,14 @@ li {
     width: 100%;
   }
 } /* end @media */
+
+/* Special hack to cap the offset of content at 380px for sidebar */
+@media (min-width: 1520px) {
+  #main-content {
+    padding-left: 380px;
+  }
+}
+
 
  h3 {
 font-family: 'uni_sansheavy_caps';
