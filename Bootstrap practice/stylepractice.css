@@ -38,14 +38,26 @@ li {
   display: block;
 }
 
+.navbar {
+  font-family: 'uni_sansthin_caps', 'sans-serif';
+}
+
+.navbar-nav li {
+  font-size: 18px;
+}
+
 .navbar {background-color: #f9f9f9; color: #262626;}
 .navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand {color: #262626;}
 .navbar-default .navbar-nav > li > a:hover {color: #ffffff; background-color: #e41e2b;}
 .navbar-default .navbar-nav > li > a:focus {color: #ffffff; background-color: #fc678d;}
 
-
 /* make sidebar nav vertical */ 
 @media (min-width: 768px) {
+  #main-content {
+    width: 100%;
+    padding-left: 25%;
+  }
+
   .sidebar-nav .navbar .navbar-collapse {
     padding: 0;
     max-height: none;
@@ -64,6 +76,10 @@ li {
     /* Sidebar content is larged than the window, let
     the user be able to scroll it. */
     overflow: scroll;
+
+    max-width: 380px;
+    width: 25%;
+    z-index: 1000;
 
     /* Padding or margins on something at 100% of the
     browser window will make it scroll. We kill them. */
@@ -126,6 +142,14 @@ li {
     width: 100%;
   }
 } /* end @media */
+
+/* Special hack to cap the offset of content at 380px for sidebar */
+@media (min-width: 1520px) {
+  #main-content {
+    padding-left: 380px;
+  }
+}
+
 
  h3 {
 font-family: 'uni_sansheavy_caps';
@@ -241,14 +265,14 @@ color: #fc678d;
 	h1 {
 font-family: 'uni_sansheavy_caps';
 color: #e41e2b;
-font-size: 35px;
+font-size: 32px;
 line-height: 4px;
 }
 
 	h2 {
 font-family: 'uni_sansheavy_caps';
 color: #e41e2b;
-font-size: 24px;
+font-size: 22.1px;
 line-height: 4px;
 }	
 
@@ -341,20 +365,27 @@ padding-top: 20px;
 }
 
 #credits {
-font-family: 'uni_sansthin_caps';
+font-family: 'uni_sansthin_caps', 'sans-serif';
 font-size: 11px;
 color:#262626;
 margin: auto; /* makes credits centre in sidebar */
-margin-top: 80px;
 }
-								
+
+/* larger than mobile, give credits space */
+@media (min-width: 768px) {
+  #credits {
+    margin-top: 80px;
+  }
+}
+
+
 #credits a{
 text-decoration:none;
 color: #e41e2b;
 }
 
 #redhead {
-font-family: 'uni_sansheavy_caps';
+font-family: 'uni_sansheavy_caps', 'sans-serif';
 color: #e41e2b;
 font-size: 24px;
 line-height: 4px;
